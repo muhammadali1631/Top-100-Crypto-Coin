@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    padding: 0 0 0 30px;
+    text-align: center;
+
+    cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+.search{
+    margin-right: 30px;
+}
+.search input{
+    border-radius: 10px;
+    color: white;
+    font-size: 3vh;
+    border: 2px gray solid;
+    background-color: transparent;
+}
+.search button{
+    background-color: transparent;
+    border:2px gray solid;
+    padding: 6px;
+    color: gray;
+    border-radius: 10px;
+}
+
+main{
+    background-color: rgb(30, 26, 26);
+    color: white;
+    padding: 0 18vh;
+
+}
+main h1{
+    padding-top: 200px;
+    text-align: center;
+}
+#coin{
+    padding: 5vh 0;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.card img{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 1vw;
+    
+}
+.card .one{
+    display: flex;
+    text-align: center;
+}
+.one img{
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 1175px) {
+    .card{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+    main{
+        padding: 0 10vh;
+    }
+   
+}
+@media screen and (max-width: 795px) {
+    .logo{
+        padding: 0 0 20px 0;
+    }
+    nav{
+        display: grid;
+        justify-content: center;
+    }
+    main{
+        padding: 0 5vw;
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .card{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .one{
+        justify-content: center;
+    }
+    main h1{
+        padding-top: 180px;
+    }
+}
+@media screen and (max-width:375px) {
+    main h1{
+        padding-top: 180px;
+    }
+}
